@@ -1,0 +1,403 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:4N25 U1
+U 1 1 6048D3FE
+P 4950 3050
+F 0 "U1" H 4950 3375 50  0000 C CNN
+F 1 "4N25" H 4950 3284 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4750 2850 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 4950 3050 50  0001 L CNN
+	1    4950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6048FE48
+P 4400 3050
+F 0 "C1" H 4200 3100 50  0000 L CNN
+F 1 "1n" H 4200 3000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4400 3050 50  0001 C CNN
+F 3 "~" H 4400 3050 50  0001 C CNN
+	1    4400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 604902B7
+P 5450 3050
+F 0 "C2" H 5542 3096 50  0000 L CNN
+F 1 "10n" H 5542 3005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5450 3050 50  0001 C CNN
+F 3 "~" H 5450 3050 50  0001 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60495CE4
+P 4400 2250
+F 0 "R1" H 4470 2296 50  0000 L CNN
+F 1 "390 1W" H 4470 2205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4330 2250 50  0001 C CNN
+F 3 "~" H 4400 2250 50  0001 C CNN
+	1    4400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 604961B7
+P 5450 2650
+F 0 "R2" H 5520 2696 50  0000 L CNN
+F 1 "4.7K " H 5520 2605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5380 2650 50  0001 C CNN
+F 3 "~" H 5450 2650 50  0001 C CNN
+	1    5450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 6049832A
+P 4400 2650
+F 0 "D2" V 4354 2729 50  0000 L CNN
+F 1 "5v1" V 4445 2729 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4400 2650 50  0001 C CNN
+F 3 "~" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60498E08
+P 4400 1850
+F 0 "D1" V 4446 1771 50  0000 R CNN
+F 1 "1N4004" V 4355 1771 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4400 1850 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J1
+U 1 1 6049DB07
+P 4900 4100
+F 0 "J1" H 4950 4417 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 4950 4326 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4900 4100 50  0001 C CNN
+F 3 "~" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 604A0B13
+P 4950 3400
+F 0 "#PWR0101" H 4950 3150 50  0001 C CNN
+F 1 "GND" H 4955 3227 50  0000 C CNN
+F 2 "" H 4950 3400 50  0001 C CNN
+F 3 "" H 4950 3400 50  0001 C CNN
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 604A2C6E
+P 5450 2350
+F 0 "#PWR0102" H 5450 2200 50  0001 C CNN
+F 1 "+5V" H 5465 2523 50  0000 C CNN
+F 2 "" H 5450 2350 50  0001 C CNN
+F 3 "" H 5450 2350 50  0001 C CNN
+	1    5450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2100 4400 2000
+Wire Wire Line
+	4400 2400 4400 2500
+Wire Wire Line
+	4400 2800 4400 2900
+Wire Wire Line
+	4400 3150 4400 3400
+Wire Wire Line
+	4400 3400 4600 3400
+Wire Wire Line
+	4650 3150 4600 3150
+Wire Wire Line
+	4600 3150 4600 3400
+Connection ~ 4600 3400
+Wire Wire Line
+	4600 3400 4950 3400
+Wire Wire Line
+	4650 2950 4500 2950
+Wire Wire Line
+	4500 2950 4500 2900
+Wire Wire Line
+	4500 2900 4400 2900
+Connection ~ 4400 2900
+Wire Wire Line
+	4400 2900 4400 2950
+Wire Wire Line
+	5450 2350 5450 2500
+Wire Wire Line
+	5450 2800 5450 2950
+Wire Wire Line
+	5250 3050 5300 3050
+Wire Wire Line
+	5300 3050 5300 2950
+Wire Wire Line
+	5300 2950 5450 2950
+Connection ~ 5450 2950
+Wire Wire Line
+	5250 3150 5450 3150
+Wire Wire Line
+	5450 3150 5450 3400
+Wire Wire Line
+	5450 3400 4950 3400
+Connection ~ 5450 3150
+Connection ~ 4950 3400
+$Comp
+L Isolator:4N25 U2
+U 1 1 604AFB79
+P 4900 6200
+F 0 "U2" H 4900 6525 50  0000 C CNN
+F 1 "4N25" H 4900 6434 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4700 6000 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 4900 6200 50  0001 L CNN
+	1    4900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 604AFB7F
+P 4350 6200
+F 0 "C3" H 4150 6250 50  0000 L CNN
+F 1 "1n" H 4150 6150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4350 6200 50  0001 C CNN
+F 3 "~" H 4350 6200 50  0001 C CNN
+	1    4350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 604AFB85
+P 5400 6200
+F 0 "C4" H 5492 6246 50  0000 L CNN
+F 1 "10n" H 5492 6155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5400 6200 50  0001 C CNN
+F 3 "~" H 5400 6200 50  0001 C CNN
+	1    5400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 604AFB8B
+P 4350 5400
+F 0 "R3" H 4420 5446 50  0000 L CNN
+F 1 "390 1W" H 4420 5355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4280 5400 50  0001 C CNN
+F 3 "~" H 4350 5400 50  0001 C CNN
+	1    4350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 604AFB91
+P 5400 5800
+F 0 "R4" H 5470 5846 50  0000 L CNN
+F 1 "4.7K " H 5470 5755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5330 5800 50  0001 C CNN
+F 3 "~" H 5400 5800 50  0001 C CNN
+	1    5400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D4
+U 1 1 604AFB97
+P 4350 5800
+F 0 "D4" V 4304 5879 50  0000 L CNN
+F 1 "5v1" V 4395 5879 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4350 5800 50  0001 C CNN
+F 3 "~" H 4350 5800 50  0001 C CNN
+	1    4350 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 604AFB9D
+P 4350 5000
+F 0 "D3" V 4396 4921 50  0000 R CNN
+F 1 "1N4004" V 4305 4921 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 4350 5000 50  0001 C CNN
+F 3 "~" H 4350 5000 50  0001 C CNN
+	1    4350 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 604AFBA3
+P 4900 6550
+F 0 "#PWR0103" H 4900 6300 50  0001 C CNN
+F 1 "GND" H 4905 6377 50  0000 C CNN
+F 2 "" H 4900 6550 50  0001 C CNN
+F 3 "" H 4900 6550 50  0001 C CNN
+	1    4900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 604AFBA9
+P 5400 5500
+F 0 "#PWR0104" H 5400 5350 50  0001 C CNN
+F 1 "+5V" H 5415 5673 50  0000 C CNN
+F 2 "" H 5400 5500 50  0001 C CNN
+F 3 "" H 5400 5500 50  0001 C CNN
+	1    5400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5250 4350 5150
+Wire Wire Line
+	4350 5550 4350 5650
+Wire Wire Line
+	4350 5950 4350 6050
+Wire Wire Line
+	4350 6300 4350 6550
+Wire Wire Line
+	4350 6550 4550 6550
+Wire Wire Line
+	4600 6300 4550 6300
+Wire Wire Line
+	4550 6300 4550 6550
+Connection ~ 4550 6550
+Wire Wire Line
+	4550 6550 4900 6550
+Wire Wire Line
+	4600 6100 4450 6100
+Wire Wire Line
+	4450 6100 4450 6050
+Wire Wire Line
+	4450 6050 4350 6050
+Connection ~ 4350 6050
+Wire Wire Line
+	4350 6050 4350 6100
+Wire Wire Line
+	5400 5500 5400 5650
+Wire Wire Line
+	5400 5950 5400 6100
+Wire Wire Line
+	5200 6200 5250 6200
+Wire Wire Line
+	5250 6200 5250 6100
+Wire Wire Line
+	5250 6100 5400 6100
+Connection ~ 5400 6100
+Wire Wire Line
+	5200 6300 5400 6300
+Wire Wire Line
+	5400 6300 5400 6550
+Wire Wire Line
+	5400 6550 4900 6550
+Connection ~ 5400 6300
+Connection ~ 4900 6550
+Text GLabel 4500 4000 0    50   Output ~ 0
+VR1-
+Text GLabel 4500 4200 0    50   Output ~ 0
+VR2+
+Text GLabel 4500 4100 0    50   Output ~ 0
+VR1+
+Text GLabel 4500 4300 0    50   Output ~ 0
+VR2-
+Text GLabel 5450 4000 2    50   Input ~ 0
+TACH1
+Text GLabel 5450 4100 2    50   Input ~ 0
+TACH2
+Wire Wire Line
+	4500 4000 4700 4000
+Wire Wire Line
+	4500 4100 4700 4100
+Wire Wire Line
+	4500 4200 4700 4200
+Wire Wire Line
+	4500 4300 4700 4300
+Wire Wire Line
+	5200 4000 5450 4000
+Wire Wire Line
+	5200 4100 5450 4100
+$Comp
+L power:+5V #PWR0105
+U 1 1 604BEB12
+P 5450 4200
+F 0 "#PWR0105" H 5450 4050 50  0001 C CNN
+F 1 "+5V" V 5465 4328 50  0000 L CNN
+F 2 "" H 5450 4200 50  0001 C CNN
+F 3 "" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 604BF808
+P 5450 4300
+F 0 "#PWR0106" H 5450 4050 50  0001 C CNN
+F 1 "GND" H 5455 4127 50  0000 C CNN
+F 2 "" H 5450 4300 50  0001 C CNN
+F 3 "" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4200 5450 4200
+Wire Wire Line
+	5200 4300 5450 4300
+Text GLabel 4200 1700 0    50   Input ~ 0
+VR1+
+Text GLabel 5900 6100 2    50   Output ~ 0
+TACH2
+Text GLabel 5850 2950 2    50   Output ~ 0
+TACH1
+Text GLabel 4200 4850 0    50   Input ~ 0
+VR2+
+Wire Wire Line
+	4200 4850 4350 4850
+Wire Wire Line
+	5900 6100 5400 6100
+Wire Wire Line
+	5850 2950 5450 2950
+Wire Wire Line
+	4200 1700 4400 1700
+Wire Notes Line
+	3900 1500 3900 3650
+Wire Notes Line
+	3900 3650 6250 3650
+Wire Notes Line
+	6250 3650 6250 1500
+Wire Notes Line
+	6250 1500 3900 1500
+Wire Notes Line
+	3850 4700 6200 4700
+Wire Notes Line
+	6200 4700 6200 6800
+Wire Notes Line
+	6200 6800 3850 6800
+Wire Notes Line
+	3850 6800 3850 4700
+Text Notes 4850 1700 0    50   ~ 0
+Channel 1 
+Text Notes 4800 5000 0    50   ~ 0
+Channel 2\n\nDo not populate if not needed\n
+Text Notes 3400 4150 0    50   ~ 0
+VRx- unused\n
+$EndSCHEMATC
