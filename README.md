@@ -10,3 +10,8 @@ Single channel version only conditions VR1+. ECM jumpers should be configured th
 Same as single channel but for both VR1+ and VR2+ pins. VRx- pins are no connect.
 No idea where this would be useful but it's a thing.
 ~~PCB coming soon~~
+
+
+#Design
+
+The schematic is originally designed by megasquirt, this is an adapted layout for speeduino's vr conditioner module footprint
